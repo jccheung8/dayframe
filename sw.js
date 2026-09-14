@@ -1,5 +1,5 @@
 // Dayframe service worker — cache-first shell, no network calls of its own.
-const CACHE = 'dayframe-v1';
+const CACHE = 'dayframe-v3';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {

@@ -36,7 +36,7 @@ No build step, no server code, no database.
 - A random AES-256-GCM data key is generated on the device at sign-up.
 - The key is wrapped twice — under your passphrase and under a one-time recovery
   code — with PBKDF2-SHA256, 310,000 iterations. The raw key is never stored.
-- Only ciphertext is written to storage (`dayframe.vault.v2`); the account record
+- Only ciphertext is written to storage (`dayframe.vault.v3`); the account record
   (`dayframe.account.v2`) holds the wrapped key and salts, never the passphrase.
 - Auto-lock discards the key from memory after 2 minutes idle.
 - No network calls of any kind. The service worker caches only the app shell.
